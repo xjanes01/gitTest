@@ -2,7 +2,9 @@
 
 #include "test.h"
 
-void test(void)
+int test(char* buff)
 {
-	return;
+	int i;
+	for(i = 0; buff[i] != '\0'; i++);	
+	return i;
 }
